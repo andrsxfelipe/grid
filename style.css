@@ -1,3 +1,4 @@
+/* EL GRID ESTÁ EN LA SECCIÓN 2 */
 :root {
     --t1: #1F2937;
     --t2: #374151;
@@ -131,8 +132,26 @@ nav a {
 }
 
 /* SECCION 2 */
-.section2>div {
-    display: flex;
+.grid_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.section2 h2 {
+    margin-block: 2vh;
+}
+
+.i {
+    grid-row: 1;
+    text-align: center;
+    align-self: center;
+}
+
+.ii {
+    grid-row: 2;
+    text-align: center;
+    align-self: top;
 }
 
 .section2 a {
@@ -140,15 +159,8 @@ nav a {
     color: var(--icons)
 }
 
-.section2>div>div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
 .preview {
-    width: 40%;
+    width: 60%;
     border-radius: 10px;
     margin-bottom: 15px;
     align-self: center;
@@ -211,10 +223,37 @@ footer>div>div {
         height: auto;
     }
 
-    .section2>div {
-        display: flex;
-        flex-direction: column;
+    .grid_section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 10% 1fr 10%;
+
     }
+
+    .i.uno {
+        grid-row: 1;
+        text-align: center;
+        align-self: center;
+    }
+
+    .ii.dos {
+        grid-row: 2;
+        text-align: center;
+        align-self: top;
+    }
+
+    .i.tres {
+        grid-row: 3;
+        text-align: center;
+        align-self: top;
+    }
+
+    .ii.cuatro {
+        grid-row: 4;
+        text-align: center;
+        align-self: top;
+    }
+
 
     .preview {
         width: 80%;
